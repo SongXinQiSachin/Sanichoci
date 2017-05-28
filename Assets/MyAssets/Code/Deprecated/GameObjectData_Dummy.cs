@@ -14,7 +14,8 @@ namespace Sanichoci.Deprecated
         {
             get
             {
-                return PrefabManager.Instance.Dummy;
+                //return PrefabManager.Instance.Dummy;
+                return null;
             }
         }
     }

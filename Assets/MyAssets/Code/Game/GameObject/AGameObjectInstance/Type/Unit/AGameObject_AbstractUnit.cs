@@ -12,57 +12,17 @@ namespace Sanichoci.Game
         AbstractAGameObject,
         IUnit
     {
-        private float maxHP;
-        private float currentHP;
-        private float maxMP;
-        private float currentMP;
-        private float maxSP;
-        private float currentSP;
+        protected override void Awake()
+        {
+            base.Awake();
+        }
 
-        private int strength;
-        private int constitution;
-        private int dexterity;
-        private int intelligence;
-        private int charisma;
-        private int sanity;
-        private int wisdom;
-        private int luck;
+        protected override void Start()
+        {
+            base.Start();
+        }
 
-        private float allDamageIncrementPercent;
-        private float criticalPercent;
-        private float meleePhysicalDamage;
-        private float rangedPhysicalDamage;
-        private float divineDamage;
-        private float darklingDamage;
-        private float elementDamage;
-        private float vitalityDamage;
-        private float curseDamage;
-        private float iceDamage;
-        private float fireDamage;
-        private float lightningDamage;
-        private float poisonDamage;
-        private float chaosDamage;
-
-        private float allDefenceIncrement;
-        private float dodgePercent;
-        private float meleePhysicalDefence;
-        private float rangedPhysicalDefence;
-        private float divineDefence;
-        private float darklingDefence;
-        private float elementDefence;
-        private float vitalityDefence;
-        private float curseDefence;
-        private float iceDefence;
-        private float fireDefence;
-        private float lightningDefence;
-        private float poisonDefence;
-        private float chaosDefence;
-
-        private List<IItem> items;
-
-        private List<IAbility> abilities;
-
-        public override AGameObjectType Type
+        public sealed override AGameObjectType Type
         {
             get
             {
@@ -70,577 +30,93 @@ namespace Sanichoci.Game
             }
         }
 
-        public virtual float MaxHP
-        {
-            get
-            {
-                return maxHP;
-            }
-
-            set
-            {
-                maxHP = value;
-            }
-        }
-
-        public virtual float CurrentHP
-        {
-            get
-            {
-                return currentHP;
-            }
-
-            set
-            {
-                currentHP = value;
-            }
-        }
-
-        public virtual float MaxMP
-        {
-            get
-            {
-                return maxMP;
-            }
-
-            set
-            {
-                maxMP = value;
-            }
-        }
-
-        public virtual float CurrentMP
-        {
-            get
-            {
-                return currentMP;
-            }
-
-            set
-            {
-                currentMP = value;
-            }
-        }
-
-        public virtual float MaxSP
-        {
-            get
-            {
-                return maxSP;
-            }
-
-            set
-            {
-                maxSP = value;
-            }
-        }
-
-        public virtual float CurrentSP
-        {
-            get
-            {
-                return currentSP;
-            }
-
-            set
-            {
-                currentSP = value;
-            }
-        }
-
-        public virtual int Strength
-        {
-            get
-            {
-                return strength;
-            }
-
-            set
-            {
-                strength = value;
-            }
-        }
-
-        public virtual int Constitution
-        {
-            get
-            {
-                return constitution;
-            }
-
-            set
-            {
-                constitution = value;
-            }
-        }
-
-        public virtual int Dexterity
-        {
-            get
-            {
-                return dexterity;
-            }
-
-            set
-            {
-                dexterity = value;
-            }
-        }
-
-        public virtual int Intelligence
-        {
-            get
-            {
-                return intelligence;
-            }
-
-            set
-            {
-                intelligence = value;
-            }
-        }
-
-        public virtual int Charisma
-        {
-            get
-            {
-                return charisma;
-            }
-
-            set
-            {
-                charisma = value;
-            }
-        }
-
-        public virtual int Sanity
-        {
-            get
-            {
-                return sanity;
-            }
-
-            set
-            {
-                sanity = value;
-            }
-        }
-
-        public virtual int Wisdom
-        {
-            get
-            {
-                return wisdom;
-            }
-
-            set
-            {
-                wisdom = value;
-            }
-        }
-
-        public virtual int Luck
-        {
-            get
-            {
-                return luck;
-            }
-
-            set
-            {
-                luck = value;
-            }
-        }
-
-        public virtual float AllDamageIncrementPercent
-        {
-            get
-            {
-                return allDamageIncrementPercent;
-            }
-
-            set
-            {
-                allDamageIncrementPercent = value;
-            }
-        }
-
-        public virtual float CriticalPercent
-        {
-            get
-            {
-                return criticalPercent;
-            }
-
-            set
-            {
-                criticalPercent = value;
-            }
-        }
-
-        public virtual float MeleePhysicalDamage
-        {
-            get
-            {
-                return meleePhysicalDamage;
-            }
-
-            set
-            {
-                meleePhysicalDamage = value;
-            }
-        }
-
-        public virtual float RangedPhysicalDamage
-        {
-            get
-            {
-                return rangedPhysicalDamage;
-            }
-
-            set
-            {
-                rangedPhysicalDamage = value;
-            }
-        }
-
-        public virtual float DivineDamage
-        {
-            get
-            {
-                return divineDamage;
-            }
-
-            set
-            {
-                divineDamage = value;
-            }
-        }
-
-        public virtual float DarklingDamage
-        {
-            get
-            {
-                return darklingDamage;
-            }
-
-            set
-            {
-                darklingDamage = value;
-            }
-        }
-
-        public virtual float ElementDamage
-        {
-            get
-            {
-                return elementDamage;
-            }
-
-            set
-            {
-                elementDamage = value;
-            }
-        }
-
-        public virtual float VitalityDamage
-        {
-            get
-            {
-                return vitalityDamage;
-            }
-
-            set
-            {
-                vitalityDamage = value;
-            }
-        }
-
-        public virtual float CurseDamage
-        {
-            get
-            {
-                return curseDamage;
-            }
-
-            set
-            {
-                curseDamage = value;
-            }
-        }
-
-        public virtual float IceDamage
-        {
-            get
-            {
-                return iceDamage;
-            }
-
-            set
-            {
-                iceDamage = value;
-            }
-        }
-
-        public virtual float FireDamage
-        {
-            get
-            {
-                return fireDamage;
-            }
-
-            set
-            {
-                fireDamage = value;
-            }
-        }
-
-        public virtual float LightningDamage
-        {
-            get
-            {
-                return lightningDamage;
-            }
-
-            set
-            {
-                lightningDamage = value;
-            }
-        }
-
-        public virtual float PoisonDamage
-        {
-            get
-            {
-                return poisonDamage;
-            }
-
-            set
-            {
-                poisonDamage = value;
-            }
-        }
-
-        public virtual float ChaosDamage
-        {
-            get
-            {
-                return chaosDamage;
-            }
-
-            set
-            {
-                chaosDamage = value;
-            }
-        }
-
-        public virtual float AllDefenceIncrement
-        {
-            get
-            {
-                return allDefenceIncrement;
-            }
-
-            set
-            {
-                allDefenceIncrement = value;
-            }
-        }
-
-        public virtual float DodgePercent
-        {
-            get
-            {
-                return dodgePercent;
-            }
-
-            set
-            {
-                dodgePercent = value;
-            }
-        }
-
-        public virtual float MeleePhysicalDefence
-        {
-            get
-            {
-                return meleePhysicalDefence;
-            }
-
-            set
-            {
-                meleePhysicalDefence = value;
-            }
-        }
-
-        public virtual float RangedPhysicalDefence
-        {
-            get
-            {
-                return rangedPhysicalDefence;
-            }
-
-            set
-            {
-                rangedPhysicalDefence = value;
-            }
-        }
-
-        public virtual float DivineDefence
-        {
-            get
-            {
-                return divineDefence;
-            }
-
-            set
-            {
-                divineDefence = value;
-            }
-        }
-
-        public virtual float DarklingDefence
-        {
-            get
-            {
-                return darklingDefence;
-            }
-
-            set
-            {
-                darklingDefence = value;
-            }
-        }
-
-        public virtual float ElementDefence
-        {
-            get
-            {
-                return elementDefence;
-            }
-
-            set
-            {
-                elementDefence = value;
-            }
-        }
-
-        public virtual float VitalityDefence
-        {
-            get
-            {
-                return vitalityDefence;
-            }
-
-            set
-            {
-                vitalityDefence = value;
-            }
-        }
-
-        public virtual float CurseDefence
-        {
-            get
-            {
-                return curseDefence;
-            }
-
-            set
-            {
-                curseDefence = value;
-            }
-        }
-
-        public virtual float IceDefence
-        {
-            get
-            {
-                return iceDefence;
-            }
-
-            set
-            {
-                iceDefence = value;
-            }
-        }
-
-        public virtual float FireDefence
-        {
-            get
-            {
-                return fireDefence;
-            }
-
-            set
-            {
-                fireDefence = value;
-            }
-        }
-
-        public virtual float LightningDefence
-        {
-            get
-            {
-                return lightningDefence;
-            }
-
-            set
-            {
-                lightningDefence = value;
-            }
-        }
-
-        public virtual float PoisonDefence
-        {
-            get
-            {
-                return poisonDefence;
-            }
-
-            set
-            {
-                poisonDefence = value;
-            }
-        }
-
-        public virtual float ChaosDefence
-        {
-            get
-            {
-                return chaosDefence;
-            }
-
-            set
-            {
-                chaosDefence = value;
-            }
-        }
-
-        public virtual List<IItem> Items
-        {
-            get
-            {
-                return items;
-            }
-
-            set
-            {
-                items = value;
-            }
-        }
-
-        public virtual List<IAbility> Abilities
-        {
-            get
-            {
-                return abilities;
-            }
-
-            set
-            {
-                abilities = value;
-            }
-        }
+        public virtual float MaxHP { get; set; }
+
+        public virtual float CurrentHP { get; set; }
+
+        public virtual float MaxMP { get; set; }
+
+        public virtual float CurrentMP { get; set; }
+
+        public virtual float MaxSP { get; set; }
+
+        public virtual float CurrentSP { get; set; }
+
+        public virtual int Strength { get; set; }
+
+        public virtual int Constitution { get; set; }
+
+        public virtual int Dexterity { get; set; }
+
+        public virtual int Intelligence { get; set; }
+
+        public virtual int Charisma { get; set; }
+
+        public virtual int Sanity { get; set; }
+
+        public virtual int Wisdom { get; set; }
+
+        public virtual int Luck { get; set; }
+
+        public virtual float AllDamageIncrementPercent { get; set; }
+
+        public virtual float CriticalPercent { get; set; }
+
+        public virtual float MeleePhysicalDamage { get; set; }
+
+        public virtual float RangedPhysicalDamage { get; set; }
+
+        public virtual float DivineDamage { get; set; }
+
+        public virtual float DarklingDamage { get; set; }
+
+        public virtual float ElementDamage { get; set; }
+
+        public virtual float VitalityDamage { get; set; }
+
+        public virtual float CurseDamage { get; set; }
+
+        public virtual float IceDamage { get; set; }
+
+        public virtual float FireDamage { get; set; }
+
+        public virtual float LightningDamage { get; set; }
+
+        public virtual float PoisonDamage { get; set; }
+
+        public virtual float ChaosDamage { get; set; }
+
+        public virtual float AllDefenceIncrement { get; set; }
+
+        public virtual float DodgePercent { get; set; }
+
+        public virtual float MeleePhysicalDefence { get; set; }
+
+        public virtual float RangedPhysicalDefence { get; set; }
+
+        public virtual float DivineDefence { get; set; }
+
+        public virtual float DarklingDefence { get; set; }
+
+        public virtual float ElementDefence { get; set; }
+
+        public virtual float VitalityDefence { get; set; }
+
+        public virtual float CurseDefence { get; set; }
+
+        public virtual float IceDefence { get; set; }
+
+        public virtual float FireDefence { get; set; }
+
+        public virtual float LightningDefence { get; set; }
+
+        public virtual float PoisonDefence { get; set; }
+
+        public virtual float ChaosDefence { get; set; }
+
+        public virtual List<IItem> Items { get; set; }
+
+        public virtual List<IAbility> Abilities { get; set; }
 
         public abstract void CastHP();
         public abstract void CastMP();

@@ -9,12 +9,4 @@ namespace Sanichoci.Game
     {
         TerrainType TerrainType { get; }
     }
-
-    public enum TerrainType
-    {
-        Normal,
-        Ice,
-        Water,
-        Grass
-    }
 }

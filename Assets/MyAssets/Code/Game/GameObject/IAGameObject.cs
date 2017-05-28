@@ -9,9 +9,5 @@ namespace Sanichoci.Game
 {
     public interface IAGameObject
     {
-        GameObject Prefab
-        {
-            get;
-        }
     }
 }

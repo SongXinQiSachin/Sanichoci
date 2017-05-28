@@ -1,66 +1,89 @@
 ﻿using Sanichoci.Game.Interface;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using UnityEngine;
 
 namespace Sanichoci.Game
 {
-    public abstract class AbstractAGameObject :
-        IAGameObject, IType,
+    public class AbstractAGameObject :
+        MonoBehaviour,
+        IAGOLifeCycle,
+        ICrossable,
+        IAGameObject, IType, IInWhicnFloor,
         IDescribable,
         ILevel
     {
-        public abstract GameObject Prefab { get; }
-
-        public virtual AGameObjectType Type
+        protected virtual void Awake()
         {
-            get
-            {
-                return AGameObjectType.None;
-            }
+            Type = AGameObjectType.None;
+
+            InWhichFloor = -999;
+
+            Name = "Default AGO Name";
+
+            Description = "Default AGO Description";
+
+            Level = -1;
         }
 
-        public virtual string Name
+        protected virtual void Start()
         {
-            get
-            {
-                return name;
-            }
-            set
-            {
-                name = value;
-            }
         }
 
-        public virtual string Description
+        public virtual AGameObjectType Type { get; set; }
+
+        public virtual long InWhichFloor { get; set; }
+
+        public virtual string Name { get; set; }
+
+        public virtual string Description { get; set; }
+
+        public virtual int Level { get; set; }
+
+        public virtual bool Crossable { get; set; }
+
+        public string GetBasicName()
         {
-            get
-            {
-                return description;
-            }
-            set
-            {
-                description = value;
-            }
+            string name = GetType().ToString();
+            int index = name.IndexOf("_");
+            name = name.Substring(index + 1, name.Length - index - 1);
+
+            return name;
         }
 
-        public int Level
+        public static Type GetAGOClassType(string oriName)
         {
-            get
-            {
-                return level;
-            }
-            set
-            {
-                level = value;
-            }
+            return System.Type.GetType("Sanichoci.Game.AGameObjectInstance.AGameObject_" + oriName);
         }
 
-        private string name = "Default Name";
-        private string description = "Default Description";
+        public static AGameObjectType ParseAGOType(string oriName)
+        {
+            if (oriName.IndexOf("AGameObject_") != -1)
+            {
+                oriName = oriName.Substring(12);
+            }
 
-        private int level = -1;
+            string type = oriName.Substring(0, oriName.IndexOf("_"));
+
+            AGameObjectType agoType = AGameObjectType.None;
+            try
+            {
+                agoType = (AGameObjectType)Enum.Parse(typeof(AGameObjectType), type);
+            } 
+            catch (Exception e)
+            {
+                Debug.LogError("ParseAGOType Error : " + oriName);
+                Debug.LogError("ParseAGOType Error : " + e);
+            }
+
+            return agoType;
+        }
+
+        public virtual void OnCreate()
+        {
+        }
+
+        public virtual void OnDestroy()
+        {
+        }
     }
 }

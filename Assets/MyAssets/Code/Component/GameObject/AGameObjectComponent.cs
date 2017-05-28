@@ -1,4 +1,5 @@
-﻿using Sanichoci.Factory;
+﻿using Sanichoci.Component.GameObject.EventHandler;
+using Sanichoci.Factory;
 using Sanichoci.Game;
 using Sanichoci.Game.AGameObjectInstance;
 using System;
@@ -10,9 +11,13 @@ using UnityEngine;
 
 namespace Sanichoci.Component.GameObject
 {
-    public class AGameObjectComponent : MonoBehaviour
+    public sealed class AGameObjectComponent : MonoBehaviour, IAGOComponent
     {
-        public AbstractAGameObject _ago;
+        public AbstractAGameObject AGO
+        {
+            get;
+            private set;
+        }
 
         private void Start()
         {
@@ -22,24 +27,30 @@ namespace Sanichoci.Component.GameObject
                 curName = curName.Substring(0, curName.Length - 7);
             }
 
-            _ago = AGameObjectFactory.CreateAGOFromAGOName(curName);
-            if (null == _ago)
+
+            Type agoType = AbstractAGameObject.GetAGOClassType(curName);
+            gameObject.AddComponent(agoType);
+            AGO = (AbstractAGameObject) GetComponent(agoType);
+
+            if (null == AGO)
             {
                 Debug.LogError("Create AGO error, please check your prefab's name and AGOInstance's file name, they should be same");
             }
 
-            Type sd = _ago.GetType();
-
-            Debug.Log(sd);
-
-            if  (_ago is IUnit)
+            if  (AGO is IUnit)
             {
                 gameObject.AddComponent<UnitEventTriggerComponent>();
             }
-            if  (_ago is ITerrain)
+            if  (AGO is ITerrain)
             {
-                gameObject.AddComponent<TerrainEventHandlerComponent>();
+                gameObject.AddComponent<TerrainComponent>();
             }
+            if  (AGO is IItem)
+            {
+                gameObject.AddComponent<ItemComponent>();
+            }
+
+            AGO.OnCreate();
         }
     }
 }

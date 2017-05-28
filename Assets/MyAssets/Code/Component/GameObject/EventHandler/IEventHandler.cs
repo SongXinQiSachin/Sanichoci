@@ -7,5 +7,6 @@ namespace Sanichoci.Component.GameObject.EventHandler
 {
     public interface IEventHandler
     {
+
     }
 }

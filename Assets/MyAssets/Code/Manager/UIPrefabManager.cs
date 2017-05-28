@@ -11,6 +11,7 @@ namespace Sanichoci.Manager
     {
         public GameObject AGOUnitShortInformation = null;
         public GameObject AGOItemShortInformation = null;
+        public GameObject AGOTerrainShortInformation = null;
 
         private void Awake()
         {

@@ -16,6 +16,7 @@ namespace Sanichoci.Component.GameObject
         {
             gameObject.AddComponent<DragEventHandler>();
             gameObject.AddComponent<ItemPointerEventHandler>();
+            gameObject.AddComponent<ItemTooltipEventHandler>();
         }
     }
 }

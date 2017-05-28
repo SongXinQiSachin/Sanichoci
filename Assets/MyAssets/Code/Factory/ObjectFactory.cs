@@ -6,7 +6,7 @@ namespace Sanichoci.Factory
 {
     public class ObjectFactory
     {
-        public static object CreateObjectFromName(string typeName)
+        public static object CreateObjectFromName(string typeName, object[] args)
         {
             Type type = Type.GetType(typeName);
 
@@ -18,14 +18,19 @@ namespace Sanichoci.Factory
 
             try
             {
-                result = Activator.CreateInstance(type);
+                result = (null == args) ? Activator.CreateInstance(type) : Activator.CreateInstance(type, args);
             }
             catch (Exception e)
             {
-                Debug.Log("Create Object Error : " + e);
+                Debug.Log("Create \"" + typeName + "\" Error : " + e);
             }
 
             return result;
+        }
+
+        public static object CreateObjectFromName(string typeName)
+        {
+            return CreateObjectFromName(typeName, null);
         }
     }
 }

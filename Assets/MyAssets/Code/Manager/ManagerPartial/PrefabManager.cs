@@ -9,17 +9,8 @@ namespace Sanichoci.Manager
 {
     public partial class PrefabManager : MonoBehaviour, IManager
     {
-        private static PrefabManager instance;
-        public static PrefabManager Instance
+        protected PrefabManager()
         {
-            get
-            {
-                if (null == instance)
-                {
-                    instance = GameObject.Find("PrefabManager").GetComponent<PrefabManager>();
-                }
-                return instance;
-            }
         }
     }
 }

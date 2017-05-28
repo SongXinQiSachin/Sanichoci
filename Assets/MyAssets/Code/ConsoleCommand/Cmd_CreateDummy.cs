@@ -17,7 +17,7 @@ namespace Sanichoci.ConsoleCommand
 
         public override void Run()
         {
-            GameObject go = AGameObjectFactory.CreateGameObjectFromGameObjectDataName("Dummy");
+            GameObject go = AGameObjectFactory.CreateUnit("Unit_Dummy");
             go.transform.position = InputManager.Instance.GetWorldPositionFcomCursorWithRaycast(CameraManager.Instance.CurrentCamera);
         }
     }

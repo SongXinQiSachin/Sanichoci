@@ -15,8 +15,6 @@ namespace Sanichoci.Factory
         {
             GameObject popup = PoolManager.Instance.Spawn(shortInformationPopupPrefab);
 
-            RectTransform transform = popup.GetComponent<RectTransform>();
-
             popup.transform.SetParent(UIManager.Instance.GameSceneUITransform, false);
 
             return popup;

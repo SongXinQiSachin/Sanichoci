@@ -17,7 +17,7 @@ namespace Sanichoci.ConsoleCommand
 
         public override void Run()
         {
-            GameObject go = AGameObjectFactory.CreateGameObjectFromGameObjectDataName(Parameter);
+            GameObject go = AGameObjectFactory.CreateAGO(Parameter);
             if (null == go)
             {
                 ShowMessage("No GameObject Named \"" + Parameter + "\"");

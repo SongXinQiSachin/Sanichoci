@@ -259,3 +259,22 @@ paket-files/
 # Python Tools for Visual Studio (PTVS)
 __pycache__/
 *.pyc
+/Temp
+/ProjectSettings
+/Library
+/ClassDiagram6.cd
+/ClassDiagram5.cd
+/ClassDiagram4.cd
+/ClassDiagram3.cd
+/ClassDiagram2.cd
+/ClassDiagram1.cd
+/Temp
+/ProjectSettings
+/Library
+/ClassDiagram6.cd
+/ClassDiagram5.cd
+/ClassDiagram4.cd
+/ClassDiagram3.cd
+/ClassDiagram2.cd
+/ClassDiagram1.cd
+/Assets

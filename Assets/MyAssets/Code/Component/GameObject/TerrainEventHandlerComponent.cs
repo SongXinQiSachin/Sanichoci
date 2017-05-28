@@ -15,6 +15,7 @@ namespace Sanichoci.Component.GameObject
         private void Start()
         {
             gameObject.AddComponent<TerrainPointerEventHandler>();
+            gameObject.AddComponent<TerrainTooltipEventHandler>();
         }
     }
 }

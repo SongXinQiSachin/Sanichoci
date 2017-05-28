@@ -1,4 +1,7 @@
 ﻿using Sanichoci.Game.Interface;
+using Sanichoci.Game.Map;
+using Sanichoci.Kits;
+using Sanichoci.Manager;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -11,7 +14,19 @@ namespace Sanichoci.Game
         AbstractAGameObject,
         ITerrain
     {
-        public override AGameObjectType Type
+        protected override void Awake()
+        {
+            base.Awake();
+        }
+        protected override void Start()
+        {
+            base.Start();
+
+            TerrainType = SanichociTypeNameParseKits.ParseTerrainType(this);
+            MapType = SanichociTypeNameParseKits.ParseMapTypeFromTerrain(this);
+        }
+
+        public sealed override AGameObjectType Type
         {
             get
             {
@@ -19,6 +34,7 @@ namespace Sanichoci.Game
             }
         }
 
-        public abstract TerrainType TerrainType { get; }
+        public virtual TerrainType TerrainType { get; set; }
+        public virtual MapType MapType { get; set; }
     }
 }

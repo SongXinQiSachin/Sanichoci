@@ -7,6 +7,7 @@ using System.Text;
 namespace Sanichoci.Game
 {
     public interface IItem : 
+        IAGameObject,
         IDescribable,
         IType, IItemType,
         IHP,
