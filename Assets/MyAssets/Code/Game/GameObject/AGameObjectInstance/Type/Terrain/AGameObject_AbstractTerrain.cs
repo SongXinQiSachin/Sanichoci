@@ -14,14 +14,9 @@ namespace Sanichoci.Game
         AbstractAGameObject,
         ITerrain
     {
-        protected override void Awake()
+        public override void OnCreate()
         {
-            base.Awake();
-        }
-        protected override void Start()
-        {
-            base.Start();
-
+            base.OnCreate();
             TerrainType = SanichociTypeNameParseKits.ParseTerrainType(this);
             MapType = SanichociTypeNameParseKits.ParseMapTypeFromTerrain(this);
         }

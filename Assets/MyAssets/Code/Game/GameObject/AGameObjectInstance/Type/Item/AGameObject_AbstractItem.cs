@@ -30,13 +30,9 @@ namespace Sanichoci.Game
         private float poisonDefence;
         private float chaosDefence;
 
-        protected override void Awake()
+        public override void OnCreate()
         {
-            base.Awake();
-        }
-        protected override void Start()
-        {
-            base.Start();
+            base.OnCreate();
         }
 
         public sealed override AGameObjectType Type

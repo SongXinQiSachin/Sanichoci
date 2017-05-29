@@ -12,14 +12,10 @@ namespace Sanichoci.Game
         AbstractAGameObject,
         IUnit
     {
-        protected override void Awake()
+        public override void OnCreate()
         {
-            base.Awake();
-        }
-
-        protected override void Start()
-        {
-            base.Start();
+            base.OnCreate();
+            Debug.Log("Create " + GetBasicName());
         }
 
         public sealed override AGameObjectType Type

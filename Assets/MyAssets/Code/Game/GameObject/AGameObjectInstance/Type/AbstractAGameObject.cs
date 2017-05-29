@@ -6,13 +6,13 @@ namespace Sanichoci.Game
 {
     public class AbstractAGameObject :
         MonoBehaviour,
-        IAGOLifeCycle,
         ICrossable,
         IAGameObject, IType, IInWhicnFloor,
         IDescribable,
-        ILevel
+        ILevel,
+        IAGameObjectLifeCycle
     {
-        protected virtual void Awake()
+        private void Awake()
         {
             Type = AGameObjectType.None;
 
@@ -25,8 +25,14 @@ namespace Sanichoci.Game
             Level = -1;
         }
 
-        protected virtual void Start()
+        private void Start()
         {
+            OnCreate();
+        }
+
+        private void FixedUpdate()
+        {
+            OnUpdate();
         }
 
         public virtual AGameObjectType Type { get; set; }
@@ -83,6 +89,10 @@ namespace Sanichoci.Game
         }
 
         public virtual void OnDestroy()
+        {
+        }
+
+        public virtual void OnUpdate()
         {
         }
     }

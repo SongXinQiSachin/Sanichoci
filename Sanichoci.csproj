@@ -13,13 +13,11 @@
     <TargetFrameworkIdentifier>.NETFramework</TargetFrameworkIdentifier>
     <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
     <TargetFrameworkProfile>Unity Subset v3.5</TargetFrameworkProfile>
-    <CompilerResponseFile>
-    </CompilerResponseFile>
+    <CompilerResponseFile></CompilerResponseFile>
     <UnityProjectType>Game:1</UnityProjectType>
     <UnityBuildTarget>StandaloneWindows:5</UnityBuildTarget>
     <UnityVersion>5.6.0f3</UnityVersion>
-    <RootNamespace>
-    </RootNamespace>
+    <RootNamespace></RootNamespace>
     <LangVersion>4</LangVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
@@ -116,7 +114,7 @@
     <Compile Include="Assets\MyAssets\Code\Component\GameObject\SimpleMoveComponent.cs" />
     <Compile Include="Assets\MyAssets\Code\Component\GameObject\TerrainComponent.cs" />
     <Compile Include="Assets\MyAssets\Code\Component\GameObject\TerrainEventHandlerComponent.cs" />
-    <Compile Include="Assets\MyAssets\Code\Component\GameObject\UnitEventTriggerComponent.cs" />
+    <Compile Include="Assets\MyAssets\Code\Component\GameObject\UnitComponent.cs" />
     <Compile Include="Assets\MyAssets\Code\Component\Stage\StageComponent.cs" />
     <Compile Include="Assets\MyAssets\Code\ConsoleCommand\AbstractCommand.cs" />
     <Compile Include="Assets\MyAssets\Code\ConsoleCommand\Cmd_CreateDummy.cs" />
@@ -142,6 +140,7 @@
     <Compile Include="Assets\MyAssets\Code\Game\Ability\IAbility.cs" />
     <Compile Include="Assets\MyAssets\Code\Game\Ability\NoTargetAbility.cs" />
     <Compile Include="Assets\MyAssets\Code\Game\GameObject\AGameObjectInstance\Type\AbstractAGameObject.cs" />
+    <Compile Include="Assets\MyAssets\Code\Game\GameObject\AGameObjectInstance\Type\IAGameObjectLifeCycle.cs" />
     <Compile Include="Assets\MyAssets\Code\Game\GameObject\AGameObjectInstance\Type\IType.cs" />
     <Compile Include="Assets\MyAssets\Code\Game\GameObject\AGameObjectInstance\Type\Item\AGameObject_AbstractItem.cs" />
     <Compile Include="Assets\MyAssets\Code\Game\GameObject\AGameObjectInstance\Type\Item\IItem.cs" />
@@ -159,6 +158,7 @@
     <Compile Include="Assets\MyAssets\Code\Game\GameObject\AGameObjectInstance\Type\Terrain\TerrainType.cs" />
     <Compile Include="Assets\MyAssets\Code\Game\GameObject\AGameObjectInstance\Type\Unit\AGameObject_AbstractUnit.cs" />
     <Compile Include="Assets\MyAssets\Code\Game\GameObject\AGameObjectInstance\Type\Unit\IUnit.cs" />
+    <Compile Include="Assets\MyAssets\Code\Game\GameObject\AGameObjectInstance\Type\Unit\IUnitEventHandler.cs" />
     <Compile Include="Assets\MyAssets\Code\Game\GameObject\AGameObjectInstance\Type\Unit\Instance\AGameObject_Unit_Dummy.cs" />
     <Compile Include="Assets\MyAssets\Code\Game\GameObject\IAGameObject.cs" />
     <Compile Include="Assets\MyAssets\Code\Game\GameObject\Interface\Caster\ICaster.cs" />
@@ -178,7 +178,6 @@
     <Compile Include="Assets\MyAssets\Code\Game\Holder.cs" />
     <Compile Include="Assets\MyAssets\Code\Game\Interface\ICooldown.cs" />
     <Compile Include="Assets\MyAssets\Code\Game\Interface\IDescribable.cs" />
-    <Compile Include="Assets\MyAssets\Code\Game\LifeCycle\IAGOLifeCycle.cs" />
     <Compile Include="Assets\MyAssets\Code\Game\Map\Map\IMap.cs" />
     <Compile Include="Assets\MyAssets\Code\Game\Map\Map\Map.cs" />
     <Compile Include="Assets\MyAssets\Code\Game\Map\Map\MapGenerator.cs" />

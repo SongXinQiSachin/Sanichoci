@@ -37,20 +37,12 @@ namespace Sanichoci.Component.GameObject
                 Debug.LogError("Create AGO error, please check your prefab's name and AGOInstance's file name, they should be same");
             }
 
-            if  (AGO is IUnit)
-            {
-                gameObject.AddComponent<UnitEventTriggerComponent>();
-            }
-            if  (AGO is ITerrain)
-            {
-                gameObject.AddComponent<TerrainComponent>();
-            }
-            if  (AGO is IItem)
-            {
-                gameObject.AddComponent<ItemComponent>();
-            }
+            gameObject.AddComponent(GetAGOComponentFromAGOType(AGO.Type));
+        }
 
-            AGO.OnCreate();
+        private Type GetAGOComponentFromAGOType(AGameObjectType type)
+        {
+            return Type.GetType("Sanichoci.Component.GameObject." + type.ToString() + "Component");
         }
     }
 }

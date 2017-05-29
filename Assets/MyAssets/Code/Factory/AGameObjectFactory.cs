@@ -17,10 +17,7 @@ namespace Sanichoci.Factory
         {
             AGameObjectType type = AbstractAGameObject.ParseAGOType(name);
 
-            Debug.Log(type.ToString() + "  A A");
-
             MethodInfo createFunc = typeof(AGameObjectFactory).GetMethod("Create" + type.ToString());
-
 
             GameObject obj = (GameObject) createFunc.Invoke(null, new string[] { name });
 
