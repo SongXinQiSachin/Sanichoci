@@ -13,11 +13,13 @@
     <TargetFrameworkIdentifier>.NETFramework</TargetFrameworkIdentifier>
     <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
     <TargetFrameworkProfile>Unity Subset v3.5</TargetFrameworkProfile>
-    <CompilerResponseFile></CompilerResponseFile>
+    <CompilerResponseFile>
+    </CompilerResponseFile>
     <UnityProjectType>Game:1</UnityProjectType>
     <UnityBuildTarget>StandaloneWindows:5</UnityBuildTarget>
     <UnityVersion>5.6.0f3</UnityVersion>
-    <RootNamespace></RootNamespace>
+    <RootNamespace>
+    </RootNamespace>
     <LangVersion>4</LangVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
@@ -91,30 +93,33 @@
     <Compile Include="Assets\EffectExamples\Shared\Scripts\ParticleMenu.cs" />
     <Compile Include="Assets\MyAssets\Code\Animation\FadeAnimation.cs" />
     <Compile Include="Assets\MyAssets\Code\Animation\IAnimation.cs" />
-    <Compile Include="Assets\MyAssets\Code\Component\GameObject\AGameObjectComponent.cs" />
-    <Compile Include="Assets\MyAssets\Code\Component\GameObject\EventHandler\CreateTooltipEventHandler.cs" />
-    <Compile Include="Assets\MyAssets\Code\Component\GameObject\EventHandler\DragEventHandler.cs" />
-    <Compile Include="Assets\MyAssets\Code\Component\GameObject\EventHandler\IDragEventHandler.cs" />
+    <Compile Include="Assets\MyAssets\Code\Deprecated\AGameObjectComponent.cs" />
+    <Compile Include="Assets\MyAssets\Code\Component\OGO\AGO\CreateTooltipEventHandler.cs" />
+    <Compile Include="Assets\MyAssets\Code\Component\OGO\Common\DragEventHandler.cs" />
+    <Compile Include="Assets\MyAssets\Code\Component\OGO\Common\IDragEventHandler.cs" />
     <Compile Include="Assets\MyAssets\Code\Component\GameObject\EventHandler\IEventHandler.cs" />
-    <Compile Include="Assets\MyAssets\Code\Component\GameObject\EventHandler\Interface\IGlobalSelectState.cs" />
-    <Compile Include="Assets\MyAssets\Code\Component\GameObject\EventHandler\ItemPointerEventHandler.cs" />
-    <Compile Include="Assets\MyAssets\Code\Component\GameObject\EventHandler\ItemTooltipEventHandler.cs" />
-    <Compile Include="Assets\MyAssets\Code\Component\GameObject\EventHandler\PointerEventHandler.cs" />
-    <Compile Include="Assets\MyAssets\Code\Component\GameObject\EventHandler\TerrainPointerEventHandler.cs" />
-    <Compile Include="Assets\MyAssets\Code\Component\GameObject\EventHandler\TerrainTooltipEventHandler.cs" />
-    <Compile Include="Assets\MyAssets\Code\Component\GameObject\EventHandler\UnitPointerEventHandler.cs" />
-    <Compile Include="Assets\MyAssets\Code\Component\GameObject\EventHandler\UnitTooltipEventHandler.cs" />
-    <Compile Include="Assets\MyAssets\Code\Component\GameObject\GameObjectEffectComponent.cs" />
+    <Compile Include="Assets\MyAssets\Code\Component\OGO\AGO\Interface\IGlobalSelectState.cs" />
+    <Compile Include="Assets\MyAssets\Code\Component\OGO\AGO\Item\ItemPointerEventHandler.cs" />
+    <Compile Include="Assets\MyAssets\Code\Component\OGO\AGO\Item\ItemTooltipEventHandler.cs" />
+    <Compile Include="Assets\MyAssets\Code\Component\OGO\Common\PointerEventHandler.cs" />
+    <Compile Include="Assets\MyAssets\Code\Component\OGO\AGO\Terrain\TerrainPointerEventHandler.cs" />
+    <Compile Include="Assets\MyAssets\Code\Component\OGO\AGO\Terrain\TerrainTooltipEventHandler.cs" />
+    <Compile Include="Assets\MyAssets\Code\Component\OGO\AGO\Unit\UnitPointerEventHandler.cs" />
+    <Compile Include="Assets\MyAssets\Code\Component\OGO\AGO\Unit\UnitTooltipEventHandler.cs" />
+    <Compile Include="Assets\MyAssets\Code\Component\OGO\Common\GameObjectEffectComponent.cs" />
     <Compile Include="Assets\MyAssets\Code\Component\GameObject\GameObjectEventTriggerComponent.cs" />
-    <Compile Include="Assets\MyAssets\Code\Component\GameObject\IAGOComponent.cs" />
-    <Compile Include="Assets\MyAssets\Code\Component\GameObject\ItemComponent.cs" />
-    <Compile Include="Assets\MyAssets\Code\Component\GameObject\ItemEventTriggerComponent.cs" />
-    <Compile Include="Assets\MyAssets\Code\Component\GameObject\MapBlockComponent.cs" />
-    <Compile Include="Assets\MyAssets\Code\Component\GameObject\MapComponent.cs" />
+    <Compile Include="Assets\MyAssets\Code\Deprecated\IAGOComponent.cs" />
+    <Compile Include="Assets\MyAssets\Code\Component\OGO\AGO\AGOBasicComponent.cs" />
+    <Compile Include="Assets\MyAssets\Code\Component\OGO\AGO\Item\ItemComponent.cs" />
+    <Compile Include="Assets\MyAssets\Code\Component\OGO\AGO\Item\ItemEventTriggerComponent.cs" />
+    <Compile Include="Assets\MyAssets\Code\Component\OGO\AGO\Terrain\MapBlockComponent.cs" />
+    <Compile Include="Assets\MyAssets\Code\Component\OGO\AGO\Terrain\MapComponent.cs" />
     <Compile Include="Assets\MyAssets\Code\Component\GameObject\SimpleMoveComponent.cs" />
-    <Compile Include="Assets\MyAssets\Code\Component\GameObject\TerrainComponent.cs" />
-    <Compile Include="Assets\MyAssets\Code\Component\GameObject\TerrainEventHandlerComponent.cs" />
-    <Compile Include="Assets\MyAssets\Code\Component\GameObject\UnitComponent.cs" />
+    <Compile Include="Assets\MyAssets\Code\Component\OGO\AGO\Terrain\TerrainComponent.cs" />
+    <Compile Include="Assets\MyAssets\Code\Component\OGO\AGO\Terrain\TerrainEventHandlerComponent.cs" />
+    <Compile Include="Assets\MyAssets\Code\Component\OGO\AGO\Unit\UnitComponent.cs" />
+    <Compile Include="Assets\MyAssets\Code\Component\OGO\OGOBasicComponent.cs" />
+    <Compile Include="Assets\MyAssets\Code\Component\OGO\UI\UIBasicComponent.cs" />
     <Compile Include="Assets\MyAssets\Code\Component\Stage\StageComponent.cs" />
     <Compile Include="Assets\MyAssets\Code\ConsoleCommand\AbstractCommand.cs" />
     <Compile Include="Assets\MyAssets\Code\ConsoleCommand\Cmd_CreateDummy.cs" />
@@ -131,6 +136,8 @@
     <Compile Include="Assets\MyAssets\Code\Deprecated\Manager\GlobalSelectedManager.cs" />
     <Compile Include="Assets\MyAssets\Code\Deprecated\Manager\ManagerPartial\GlobalSelectedManager.cs" />
     <Compile Include="Assets\MyAssets\Code\Deprecated\TerrainFactory.cs" />
+    <Compile Include="Assets\MyAssets\Code\Exception\IllegalOGONameException.cs" />
+    <Compile Include="Assets\MyAssets\Code\Exception\UnknownOGOTypeException.cs" />
     <Compile Include="Assets\MyAssets\Code\Factory\AGameObjectFactory.cs" />
     <Compile Include="Assets\MyAssets\Code\Factory\ObjectFactory.cs" />
     <Compile Include="Assets\MyAssets\Code\Factory\UIFactory.cs" />
@@ -139,42 +146,6 @@
     <Compile Include="Assets\MyAssets\Code\Game\Ability\Cost\MPCost.cs" />
     <Compile Include="Assets\MyAssets\Code\Game\Ability\IAbility.cs" />
     <Compile Include="Assets\MyAssets\Code\Game\Ability\NoTargetAbility.cs" />
-    <Compile Include="Assets\MyAssets\Code\Game\GameObject\AGameObjectInstance\Type\AbstractAGameObject.cs" />
-    <Compile Include="Assets\MyAssets\Code\Game\GameObject\AGameObjectInstance\Type\IAGameObjectLifeCycle.cs" />
-    <Compile Include="Assets\MyAssets\Code\Game\GameObject\AGameObjectInstance\Type\IType.cs" />
-    <Compile Include="Assets\MyAssets\Code\Game\GameObject\AGameObjectInstance\Type\Item\AGameObject_AbstractItem.cs" />
-    <Compile Include="Assets\MyAssets\Code\Game\GameObject\AGameObjectInstance\Type\Item\IItem.cs" />
-    <Compile Include="Assets\MyAssets\Code\Game\GameObject\AGameObjectInstance\Type\Item\IItemType.cs" />
-    <Compile Include="Assets\MyAssets\Code\Game\GameObject\AGameObjectInstance\Type\Item\Instance\AGameObject_Item_Dummy.cs" />
-    <Compile Include="Assets\MyAssets\Code\Game\GameObject\AGameObjectInstance\Type\Terrain\AGameObject_AbstractTerrain.cs" />
-    <Compile Include="Assets\MyAssets\Code\Game\GameObject\AGameObjectInstance\Type\Terrain\ITerrain.cs" />
-    <Compile Include="Assets\MyAssets\Code\Game\GameObject\AGameObjectInstance\Type\Terrain\ITerrainType.cs" />
-    <Compile Include="Assets\MyAssets\Code\Game\GameObject\AGameObjectInstance\Type\Terrain\Instance\AGameObject_Terrain_Plain_Grass.cs" />
-    <Compile Include="Assets\MyAssets\Code\Game\GameObject\AGameObjectInstance\Type\Terrain\Instance\AGameObject_Terrain_Plain_Normal.cs" />
-    <Compile Include="Assets\MyAssets\Code\Game\GameObject\AGameObjectInstance\Type\Terrain\Instance\AGameObject_Terrain_Plain_Nothing.cs" />
-    <Compile Include="Assets\MyAssets\Code\Game\GameObject\AGameObjectInstance\Type\Terrain\Instance\AGameObject_Terrain_Plain_Sand.cs" />
-    <Compile Include="Assets\MyAssets\Code\Game\GameObject\AGameObjectInstance\Type\Terrain\Instance\AGameObject_Terrain_Plain_Wall.cs" />
-    <Compile Include="Assets\MyAssets\Code\Game\GameObject\AGameObjectInstance\Type\Terrain\Instance\AGameObject_Terrain_Plain_Water.cs" />
-    <Compile Include="Assets\MyAssets\Code\Game\GameObject\AGameObjectInstance\Type\Terrain\TerrainType.cs" />
-    <Compile Include="Assets\MyAssets\Code\Game\GameObject\AGameObjectInstance\Type\Unit\AGameObject_AbstractUnit.cs" />
-    <Compile Include="Assets\MyAssets\Code\Game\GameObject\AGameObjectInstance\Type\Unit\IUnit.cs" />
-    <Compile Include="Assets\MyAssets\Code\Game\GameObject\AGameObjectInstance\Type\Unit\IUnitEventHandler.cs" />
-    <Compile Include="Assets\MyAssets\Code\Game\GameObject\AGameObjectInstance\Type\Unit\Instance\AGameObject_Unit_Dummy.cs" />
-    <Compile Include="Assets\MyAssets\Code\Game\GameObject\IAGameObject.cs" />
-    <Compile Include="Assets\MyAssets\Code\Game\GameObject\Interface\Caster\ICaster.cs" />
-    <Compile Include="Assets\MyAssets\Code\Game\GameObject\Interface\Caster\IHPCaster.cs" />
-    <Compile Include="Assets\MyAssets\Code\Game\GameObject\Interface\Caster\IMPCaster.cs" />
-    <Compile Include="Assets\MyAssets\Code\Game\GameObject\Interface\Caster\ISPCaster.cs" />
-    <Compile Include="Assets\MyAssets\Code\Game\GameObject\Interface\IAttackState.cs" />
-    <Compile Include="Assets\MyAssets\Code\Game\GameObject\Interface\ICrossable.cs" />
-    <Compile Include="Assets\MyAssets\Code\Game\GameObject\Interface\IDefenceState.cs" />
-    <Compile Include="Assets\MyAssets\Code\Game\GameObject\Interface\IHP.cs" />
-    <Compile Include="Assets\MyAssets\Code\Game\GameObject\Interface\IInWhicnFloor.cs" />
-    <Compile Include="Assets\MyAssets\Code\Game\GameObject\Interface\IInventory.cs" />
-    <Compile Include="Assets\MyAssets\Code\Game\GameObject\Interface\ILevel.cs" />
-    <Compile Include="Assets\MyAssets\Code\Game\GameObject\Interface\IMP.cs" />
-    <Compile Include="Assets\MyAssets\Code\Game\GameObject\Interface\IProperty.cs" />
-    <Compile Include="Assets\MyAssets\Code\Game\GameObject\Interface\ISP.cs" />
     <Compile Include="Assets\MyAssets\Code\Game\Holder.cs" />
     <Compile Include="Assets\MyAssets\Code\Game\Interface\ICooldown.cs" />
     <Compile Include="Assets\MyAssets\Code\Game\Interface\IDescribable.cs" />
@@ -194,6 +165,7 @@
     <Compile Include="Assets\MyAssets\Code\Game\Map\Map\MapType.cs" />
     <Compile Include="Assets\MyAssets\Code\Game\Map\MapBlock\IMapBlock.cs" />
     <Compile Include="Assets\MyAssets\Code\Game\Map\MapBlock\MapBlock.cs" />
+    <Compile Include="Assets\MyAssets\Code\Interface\IDisposable.cs" />
     <Compile Include="Assets\MyAssets\Code\Kits\CoroutineKits.cs" />
     <Compile Include="Assets\MyAssets\Code\Kits\MeshKit.cs" />
     <Compile Include="Assets\MyAssets\Code\Kits\RandomKits.cs" />
@@ -252,6 +224,45 @@
     <Compile Include="Assets\MyAssets\Code\Manager\UIManager.cs" />
     <Compile Include="Assets\MyAssets\Code\Manager\UIPrefabManager.cs" />
     <Compile Include="Assets\MyAssets\Code\Manager\UnitPrefabManager.cs" />
+    <Compile Include="Assets\MyAssets\Code\OGO\AGO\AGOType.cs" />
+    <Compile Include="Assets\MyAssets\Code\OGO\AGO\AbstractAGO.cs" />
+    <Compile Include="Assets\MyAssets\Code\OGO\AGO\IAGO.cs" />
+    <Compile Include="Assets\MyAssets\Code\OGO\AGO\Interface\Caster\ICaster.cs" />
+    <Compile Include="Assets\MyAssets\Code\OGO\AGO\Interface\Caster\IHPCaster.cs" />
+    <Compile Include="Assets\MyAssets\Code\OGO\AGO\Interface\Caster\IMPCaster.cs" />
+    <Compile Include="Assets\MyAssets\Code\OGO\AGO\Interface\Caster\ISPCaster.cs" />
+    <Compile Include="Assets\MyAssets\Code\OGO\AGO\Interface\IAttackState.cs" />
+    <Compile Include="Assets\MyAssets\Code\OGO\AGO\Interface\ICrossable.cs" />
+    <Compile Include="Assets\MyAssets\Code\OGO\AGO\Interface\IDefenceState.cs" />
+    <Compile Include="Assets\MyAssets\Code\OGO\AGO\Interface\IHP.cs" />
+    <Compile Include="Assets\MyAssets\Code\OGO\AGO\Interface\IInWhicnFloor.cs" />
+    <Compile Include="Assets\MyAssets\Code\OGO\AGO\Interface\IInventory.cs" />
+    <Compile Include="Assets\MyAssets\Code\OGO\AGO\Interface\ILevel.cs" />
+    <Compile Include="Assets\MyAssets\Code\OGO\AGO\Interface\IMP.cs" />
+    <Compile Include="Assets\MyAssets\Code\OGO\AGO\Interface\IProperty.cs" />
+    <Compile Include="Assets\MyAssets\Code\OGO\AGO\Interface\ISP.cs" />
+    <Compile Include="Assets\MyAssets\Code\OGO\AGO\Type\Item\AbstractItem.cs" />
+    <Compile Include="Assets\MyAssets\Code\OGO\AGO\Type\Item\IItem.cs" />
+    <Compile Include="Assets\MyAssets\Code\OGO\AGO\Type\Item\Instance\Dummy.cs" />
+    <Compile Include="Assets\MyAssets\Code\OGO\AGO\Type\Item\ItemType.cs" />
+    <Compile Include="Assets\MyAssets\Code\OGO\AGO\Type\Terrain\AbstractTerrain.cs" />
+    <Compile Include="Assets\MyAssets\Code\OGO\AGO\Type\Terrain\ITerrain.cs" />
+    <Compile Include="Assets\MyAssets\Code\OGO\AGO\Type\Terrain\Instance\Plain_Grass.cs" />
+    <Compile Include="Assets\MyAssets\Code\OGO\AGO\Type\Terrain\Instance\Plain_Normal.cs" />
+    <Compile Include="Assets\MyAssets\Code\OGO\AGO\Type\Terrain\Instance\Plain_Nothing.cs" />
+    <Compile Include="Assets\MyAssets\Code\OGO\AGO\Type\Terrain\Instance\Plain_Sand.cs" />
+    <Compile Include="Assets\MyAssets\Code\OGO\AGO\Type\Terrain\Instance\Plain_Wall.cs" />
+    <Compile Include="Assets\MyAssets\Code\OGO\AGO\Type\Terrain\Instance\Plain_Water.cs" />
+    <Compile Include="Assets\MyAssets\Code\OGO\AGO\Type\Terrain\TerrainType.cs" />
+    <Compile Include="Assets\MyAssets\Code\OGO\AGO\Type\Unit\AbstractUnit.cs" />
+    <Compile Include="Assets\MyAssets\Code\OGO\AGO\Type\Unit\IUnit.cs" />
+    <Compile Include="Assets\MyAssets\Code\OGO\AGO\Type\Unit\IUnitEventHandler.cs" />
+    <Compile Include="Assets\MyAssets\Code\OGO\AGO\Type\Unit\Instance\Dummy.cs" />
+    <Compile Include="Assets\MyAssets\Code\OGO\AbstractOGO.cs" />
+    <Compile Include="Assets\MyAssets\Code\OGO\IOGO.cs" />
+    <Compile Include="Assets\MyAssets\Code\OGO\OGOComponent.cs" />
+    <Compile Include="Assets\MyAssets\Code\OGO\OGOType.cs" />
+    <Compile Include="Assets\MyAssets\Code\OGO\SanichociMonoBehaviour.cs" />
     <Compile Include="Assets\MyAssets\Code\Script\Camera\PlanformCameraScript.cs" />
     <Compile Include="Assets\MyAssets\Code\Script\ChessboardGenerator.cs" />
     <Compile Include="Assets\MyAssets\Code\Script\GPCameraScript.cs" />
@@ -260,6 +271,7 @@
     <Compile Include="Assets\MyAssets\Code\Struct\Pair.cs" />
     <Compile Include="Assets\MyAssets\Code\Struct\Triplet.cs" />
     <Compile Include="Assets\MyAssets\Code\Test\Test.cs" />
+    <Compile Include="Assets\MyAssets\Code\UI\IUI.cs" />
     <Compile Include="Assets\MyAssets\Code\UI\UI\AGOTooltipWindow\AGOTooltipWindow_Item.cs" />
     <Compile Include="Assets\MyAssets\Code\UI\UI\AGOTooltipWindow\AGOTooltipWindow_Terrain.cs" />
     <Compile Include="Assets\MyAssets\Code\UI\UI\AGOTooltipWindow\AGOTooltipWindow_Unit.cs" />
@@ -267,9 +279,12 @@
     <Compile Include="Assets\MyAssets\Code\UI\UI\AGOTooltipWindow\IAGOTooltipWindow.cs" />
     <Compile Include="Assets\MyAssets\Code\UI\UI\AbstractUIComponent.cs" />
     <Compile Include="Assets\MyAssets\Code\UI\UI\ConsoleHolder\ConsoleHolderScript.cs" />
-    <Compile Include="Assets\MyAssets\Code\UI\UI\IUIComponent.cs" />
     <Compile Include="Assets\MyAssets\Code\UI\UI\InventoryHolder\InventoryHolderScript.cs" />
     <Compile Include="Assets\MyAssets\Code\UI\UI\PointDownTestScript.cs" />
+    <Compile Include="Assets\MyAssets\Code\UI\UI\UIComponent.cs" />
+    <Compile Include="Assets\MyAssets\Code\UI\ViewHelper\AbstractViewHelper.cs" />
+    <Compile Include="Assets\MyAssets\Code\UI\ViewHelper\IVierHelper.cs" />
+    <Compile Include="Assets\MyAssets\Code\UI\ViewHelper\ProgressBarHelper.cs" />
     <Compile Include="Assets\OutlineEffect\Demo\OutlineAnimation.cs" />
     <Compile Include="Assets\OutlineEffect\Demo\Rotate.cs" />
     <Compile Include="Assets\OutlineEffect\Demo\Toggle.cs" />
@@ -325,6 +340,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\EffectExamples\Shared\Shaders\SurfaceShader_VC.shader" />
+    <None Include="Assets\MyAssets\Code\OGO\OGO_ReadMe.txt" />
     <None Include="Assets\OutlineEffect\Resources\OutlineBufferShader.shader" />
     <None Include="Assets\OutlineEffect\Resources\OutlineShader.shader" />
     <None Include="Assets\PostProcessing\Editor Resources\Monitors\HistogramCompute.compute" />
@@ -447,6 +463,7 @@
     <None Include="Assets\_MK\_MKGlow\_Shader\_MKGlowEffect\MKGlowCompose.shader" />
     <None Include="Assets\_MK\_MKGlow\_Shader\_MKGlowEffect\MKGlowRender.shader" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="GenerateTargetFrameworkMonikerAttribute" />
 </Project>

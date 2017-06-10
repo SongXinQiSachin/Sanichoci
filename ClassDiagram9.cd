@@ -88,16 +88,16 @@
   <Class Name="Sanichoci.Component.GameObject.AGameObjectComponent" Collapsed="true" BaseTypeListCollapsed="true">
     <Position X="50.5" Y="0.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AEAAAAAAACAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAA=</HashCode>
-      <FileName>Assets\MyAssets\Code\Component\GameObject\AGameObjectComponent.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\MyAssets\Code\Component\GameObject\EventHandler\AGameObjectComponent.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" Collapsed="true" />
   </Class>
-  <Class Name="Sanichoci.Component.GameObject.GameObjectEffectComponent" Collapsed="true">
+  <Class Name="Sanichoci.Component.OGO.GameObjectEffectComponent" Collapsed="true">
     <Position X="59.25" Y="1.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAQAAACAAAAAAAAEAAAAAAAAAAAAAAICAAAAAAAA=</HashCode>
-      <FileName>Assets\MyAssets\Code\Component\GameObject\GameObjectEffectComponent.cs</FileName>
+      <FileName>Assets\MyAssets\Code\Component\OGO\Common\GameObjectEffectComponent.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Sanichoci.Component.GameObject.GameObjectEventTriggerComponent" Collapsed="true">
@@ -114,27 +114,20 @@
       <FileName>Assets\MyAssets\Code\Component\GameObject\ItemComponent.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="Sanichoci.Component.GameObject.ItemEventTriggerComponent" Collapsed="true">
+  <Class Name="Sanichoci.Component.OGO.AGO.ItemEventTriggerComponent" Collapsed="true">
     <Position X="19.75" Y="14" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Assets\MyAssets\Code\Component\GameObject\ItemEventTriggerComponent.cs</FileName>
+      <FileName>Assets\MyAssets\Code\Component\OGO\AGO\Item\ItemEventTriggerComponent.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="Sanichoci.Component.GameObject.MapBlockComponent" Collapsed="true" BaseTypeListCollapsed="true">
+  <Class Name="Sanichoci.Component.OGO.AGO.MapBlockComponent" Collapsed="true" BaseTypeListCollapsed="true">
     <Position X="50.5" Y="3.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAACACQAAoAAAABAAAAAAAAAIAAEAEAAAAAAA=</HashCode>
-      <FileName>Assets\MyAssets\Code\Component\GameObject\MapBlockComponent.cs</FileName>
+      <HashCode>AAAAAAAAACACQAAoAAAABAAAAAAAAAAAAEAEAAAAAAA=</HashCode>
+      <FileName>Assets\MyAssets\Code\Component\OGO\AGO\Terrain\MapBlockComponent.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" Collapsed="true" />
-  </Class>
-  <Class Name="Sanichoci.Component.GameObject.MapComponent" Collapsed="true">
-    <Position X="52.25" Y="3.5" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Assets\MyAssets\Code\Component\GameObject\MapComponent.cs</FileName>
-    </TypeIdentifier>
   </Class>
   <Class Name="Sanichoci.Component.GameObject.SimpleMoveComponent" Collapsed="true">
     <Position X="59.25" Y="6.5" Width="1.5" />
@@ -143,18 +136,11 @@
       <FileName>Assets\MyAssets\Code\Component\GameObject\SimpleMoveComponent.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="Sanichoci.Component.GameObject.TerrainComponent" Collapsed="true">
+  <Class Name="Sanichoci.Component.OGO.AGO.TerrainComponent" Collapsed="true">
     <Position X="47" Y="7.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEA=</HashCode>
-      <FileName>Assets\MyAssets\Code\Component\GameObject\TerrainComponent.cs</FileName>
-    </TypeIdentifier>
-  </Class>
-  <Class Name="Sanichoci.Component.GameObject.TerrainEventHandlerComponent" Collapsed="true">
-    <Position X="22" Y="14" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Assets\MyAssets\Code\Component\GameObject\TerrainEventHandlerComponent.cs</FileName>
+      <FileName>Assets\MyAssets\Code\Component\OGO\AGO\Terrain\TerrainComponent.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Sanichoci.Component.GameObject.UnitComponent" Collapsed="true">
@@ -164,79 +150,78 @@
       <FileName>Assets\MyAssets\Code\Component\GameObject\UnitComponent.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="Sanichoci.Component.GameObject.EventHandler.CreateTooltipEventHandler" Collapsed="true">
+  <Class Name="Sanichoci.Component.OGO.CreateTooltipEventHandler" Collapsed="true">
     <Position X="6.25" Y="18.25" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>BMQAEIAgQCAQgQIAABAEAAAEAIAgCAAABAAAAQBAAAA=</HashCode>
-      <FileName>Assets\MyAssets\Code\Component\GameObject\EventHandler\CreateTooltipEventHandler.cs</FileName>
+      <HashCode>BMQAEIAgQCAQgQAAABAEAAAEAIAgCAAABAAAAQBAAAA=</HashCode>
+      <FileName>Assets\MyAssets\Code\Component\OGO\AGO\CreateTooltipEventHandler.cs</FileName>
     </TypeIdentifier>
-    <Lollipop Position="0.2" />
   </Class>
   <Class Name="Sanichoci.Component.GameObject.EventHandler.DragEventHandler" Collapsed="true" BaseTypeListCollapsed="true">
     <Position X="54" Y="1.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAACAAAAAAAQBAEAAAAAAAACAAAAAAACAAAAA=</HashCode>
-      <FileName>Assets\MyAssets\Code\Component\GameObject\EventHandler\DragEventHandler.cs</FileName>
+      <FileName>Assets\MyAssets\Code\Component\OGO\Common\DragEventHandler.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" Collapsed="true" />
   </Class>
-  <Class Name="Sanichoci.Component.GameObject.EventHandler.ItemPointerEventHandler" Collapsed="true">
+  <Class Name="Sanichoci.Component.OGO.AGO.ItemPointerEventHandler" Collapsed="true">
     <Position X="12.25" Y="18" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAABIiAAAAAAAAAAAAAAAAAAAgAAAAAAAAACAEA=</HashCode>
-      <FileName>Assets\MyAssets\Code\Component\GameObject\EventHandler\ItemPointerEventHandler.cs</FileName>
+      <HashCode>AAAAAAABIiAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAEA=</HashCode>
+      <FileName>Assets\MyAssets\Code\Component\OGO\AGO\Item\ItemPointerEventHandler.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" />
   </Class>
-  <Class Name="Sanichoci.Component.GameObject.EventHandler.ItemTooltipEventHandler" Collapsed="true">
+  <Class Name="Sanichoci.Component.OGO.AGO.ItemTooltipEventHandler" Collapsed="true">
     <Position X="10" Y="19.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAQAAAAgAAAAgAAAABAEAAAAAAAAAAAABAAAAAAAAAA=</HashCode>
-      <FileName>Assets\MyAssets\Code\Component\GameObject\EventHandler\ItemTooltipEventHandler.cs</FileName>
+      <FileName>Assets\MyAssets\Code\Component\OGO\AGO\Item\ItemTooltipEventHandler.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="Sanichoci.Component.GameObject.EventHandler.PointerEventHandler" Collapsed="true">
+  <Class Name="Sanichoci.Component.OGO.PointerEventHandler" Collapsed="true">
     <Position X="6.5" Y="16.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AACAAAAAAgAIAAAAAAAAAAAAAAAgAAAAAAAAAQAAAAA=</HashCode>
-      <FileName>Assets\MyAssets\Code\Component\GameObject\EventHandler\PointerEventHandler.cs</FileName>
+      <FileName>Assets\MyAssets\Code\Component\OGO\Common\PointerEventHandler.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" />
   </Class>
-  <Class Name="Sanichoci.Component.GameObject.EventHandler.TerrainPointerEventHandler" Collapsed="true">
+  <Class Name="Sanichoci.Component.OGO.AGO.TerrainPointerEventHandler" Collapsed="true">
     <Position X="1" Y="18" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AACAAAAAAiBIAAAAAQAAAAAAAAAgAAAAAAAAAQACAEA=</HashCode>
-      <FileName>Assets\MyAssets\Code\Component\GameObject\EventHandler\TerrainPointerEventHandler.cs</FileName>
+      <FileName>Assets\MyAssets\Code\Component\OGO\AGO\Terrain\TerrainPointerEventHandler.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="Sanichoci.Component.GameObject.EventHandler.TerrainTooltipEventHandler" Collapsed="true">
+  <Class Name="Sanichoci.Component.OGO.AGO.TerrainTooltipEventHandler" Collapsed="true">
     <Position X="5.5" Y="19.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAQAAAAgAAAAgAAAABAEAAAAAAAAAAAABAAAAAAAAAA=</HashCode>
-      <FileName>Assets\MyAssets\Code\Component\GameObject\EventHandler\TerrainTooltipEventHandler.cs</FileName>
+      <FileName>Assets\MyAssets\Code\Component\OGO\AGO\Terrain\TerrainTooltipEventHandler.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="Sanichoci.Component.GameObject.EventHandler.UnitPointerEventHandler" Collapsed="true">
+  <Class Name="Sanichoci.Component.OGO.AGO.UnitPointerEventHandler" Collapsed="true">
     <Position X="3.25" Y="18" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAABIiAAAAAAAAAAAAAAAAAAAgCAAAAAAAACAEA=</HashCode>
-      <FileName>Assets\MyAssets\Code\Component\GameObject\EventHandler\UnitPointerEventHandler.cs</FileName>
+      <HashCode>AAAAAAABIiAAAAAAAAAAAAAAAAAAAACAAAAAAAACAEA=</HashCode>
+      <FileName>Assets\MyAssets\Code\Component\OGO\AGO\Unit\UnitPointerEventHandler.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" />
   </Class>
-  <Class Name="Sanichoci.Component.GameObject.EventHandler.OnUnitSingleSelectedEvent" Collapsed="true">
+  <Class Name="Sanichoci.Component.OGO.AGO.OnUnitSingleSelectedEvent" Collapsed="true">
     <Position X="54" Y="4.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Assets\MyAssets\Code\Component\GameObject\EventHandler\UnitPointerEventHandler.cs</FileName>
+      <FileName>Assets\MyAssets\Code\Component\OGO\AGO\Unit\UnitPointerEventHandler.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="Sanichoci.Component.GameObject.EventHandler.UnitTooltipEventHandler" Collapsed="true">
+  <Class Name="Sanichoci.Component.OGO.AGO.UnitTooltipEventHandler" Collapsed="true">
     <Position X="7.75" Y="19.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAQAAAAgAAAAgAAAABAEAAAAAAAAAAAABAAAAAAAAAA=</HashCode>
-      <FileName>Assets\MyAssets\Code\Component\GameObject\EventHandler\UnitTooltipEventHandler.cs</FileName>
+      <FileName>Assets\MyAssets\Code\Component\OGO\AGO\Unit\UnitTooltipEventHandler.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Sanichoci.Component.StageComponent" Collapsed="true">
@@ -307,7 +292,7 @@
   <Class Name="Sanichoci.UI.AbstractUIComponent" Collapsed="true">
     <Position X="3" Y="8.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAACAAAAAAAAAAAAAAAAQABCBAAAAAAAAAAAAAAEA=</HashCode>
+      <HashCode>AAAAACAAACAAAAAAAAAAAAQABCBAAAAAAAAAAAAAAEA=</HashCode>
       <FileName>Assets\MyAssets\Code\UI\UI\AbstractUIComponent.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" />
@@ -337,7 +322,7 @@
   <Class Name="Sanichoci.UI.AGOTooltipWindow_Unit" Collapsed="true">
     <Position X="5.25" Y="11.25" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAEAQAAAAAAAAQAEgQCCAAAAAAAAAAAAAAABQ=</HashCode>
+      <HashCode>ABAAAABAkgAAIAAAgAAQAEgAACCAAAAAAAAAAAAgEBQ=</HashCode>
       <FileName>Assets\MyAssets\Code\UI\UI\AGOTooltipWindow\AGOTooltipWindow_Unit.cs</FileName>
     </TypeIdentifier>
   </Class>
@@ -414,92 +399,85 @@
     </TypeIdentifier>
     <Lollipop Position="0.2" Collapsed="true" />
   </Class>
-  <Class Name="Sanichoci.Game.AbstractAGameObject" Collapsed="true">
+  <Class Name="Sanichoci.OGO.AGO.AbstractAGO" Collapsed="true">
     <Position X="9" Y="12.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>QAABAAIABiAgAAAAAAAAAAQABCAAAAgBAQAAAAEAAEA=</HashCode>
-      <FileName>Assets\MyAssets\Code\Game\GameObject\AGameObjectInstance\Type\AbstractAGameObject.cs</FileName>
+      <HashCode>QAAAAAIABBAkAAAAAAAAAAQABCAAAAgBAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\MyAssets\Code\OGO\AGO\AbstractAGO.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" />
   </Class>
-  <Class Name="Sanichoci.Game.AGameObject_AbstractItem" Collapsed="true">
+  <Class Name="Sanichoci.OGO.AGO.Item.AbstractItem" Collapsed="true">
     <Position X="17" Y="14" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>gAgAAIBAAAIAQBAESIEAGAiAADoAAIAEEROAgBAKAoQ=</HashCode>
-      <FileName>Assets\MyAssets\Code\Game\GameObject\AGameObjectInstance\Type\Item\AGameObject_AbstractItem.cs</FileName>
+      <HashCode>gAgAAIBAABIAQBAESIEAGAiAADoAAIAEEBOAgBAKAoQ=</HashCode>
+      <FileName>Assets\MyAssets\Code\OGO\AGO\Type\Item\AbstractItem.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" />
   </Class>
-  <Class Name="Sanichoci.Game.AGameObject_AbstractTerrain" Collapsed="true">
+  <Class Name="Sanichoci.OGO.AGO.Terrain.AbstractTerrain" Collapsed="true">
     <Position X="6.75" Y="14" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAACAAAAAAAAAAAAAAAQCAAAAAAAQAAAAAAAAA=</HashCode>
-      <FileName>Assets\MyAssets\Code\Game\GameObject\AGameObjectInstance\Type\Terrain\AGameObject_AbstractTerrain.cs</FileName>
+      <HashCode>AAAAAAAACBAAAAAAAAAAAAAAQCAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\MyAssets\Code\OGO\AGO\Type\Terrain\AbstractTerrain.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" />
   </Class>
-  <Class Name="Sanichoci.Game.AGameObject_AbstractUnit" Collapsed="true">
+  <Class Name="Sanichoci.OGO.AGO.Unit.AbstractUnit" Collapsed="true">
     <Position X="14.75" Y="14" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>gAAACQDBACIACAAACsOEcABAIDpSBIAEIZMAiFYIZCw=</HashCode>
-      <FileName>Assets\MyAssets\Code\Game\GameObject\AGameObjectInstance\Type\Unit\AGameObject_AbstractUnit.cs</FileName>
+      <HashCode>gAAACQDBADIACAAACsOGcABAIDpSBIAEIJMAiFYIZCw=</HashCode>
+      <FileName>Assets\MyAssets\Code\OGO\AGO\Type\Unit\AbstractUnit.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" />
   </Class>
-  <Class Name="Sanichoci.Game.AGameObjectInstance.AGameObject_Item_Dummy" Collapsed="true">
+  <Class Name="Sanichoci.OGO.AGO.Item.Dummy" Collapsed="true">
     <Position X="17" Y="15.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAgA=</HashCode>
-      <FileName>Assets\MyAssets\Code\Game\GameObject\AGameObjectInstance\Type\Item\Instance\AGameObject_Item_Dummy.cs</FileName>
+      <FileName>Assets\MyAssets\Code\OGO\AGO\Type\Item\Instance\Dummy.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="Sanichoci.Game.AGameObjectInstance.AGameObject_Terrain_Plain_Grass" Collapsed="true">
+  <Class Name="Sanichoci.OGO.AGO.Terrain.Plain_Grass" Collapsed="true">
     <Position X="1.25" Y="15.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Assets\MyAssets\Code\Game\GameObject\AGameObjectInstance\Type\Terrain\Instance\AGameObject_Terrain_Plain_Grass.cs</FileName>
+      <FileName>Assets\MyAssets\Code\OGO\AGO\Type\Terrain\Instance\Plain_Grass.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="Sanichoci.Game.AGameObjectInstance.AGameObject_Terrain_Plain_Normal" Collapsed="true">
-    <Position X="3.5" Y="15.25" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Assets\MyAssets\Code\Game\GameObject\AGameObjectInstance\Type\Terrain\Instance\AGameObject_Terrain_Plain_Normal.cs</FileName>
-    </TypeIdentifier>
-  </Class>
-  <Class Name="Sanichoci.Game.AGameObjectInstance.AGameObject_Terrain_Plain_Nothing" Collapsed="true">
+  <Class Name="Sanichoci.OGO.AGO.Terrain.Plain_Nothing" Collapsed="true">
     <Position X="5.75" Y="15.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Assets\MyAssets\Code\Game\GameObject\AGameObjectInstance\Type\Terrain\Instance\AGameObject_Terrain_Plain_Nothing.cs</FileName>
+      <FileName>Assets\MyAssets\Code\OGO\AGO\Type\Terrain\Instance\Plain_Nothing.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="Sanichoci.Game.AGameObjectInstance.AGameObject_Terrain_Plain_Sand" Collapsed="true">
+  <Class Name="Sanichoci.OGO.AGO.Terrain.Plain_Sand" Collapsed="true">
     <Position X="8" Y="15.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Assets\MyAssets\Code\Game\GameObject\AGameObjectInstance\Type\Terrain\Instance\AGameObject_Terrain_Plain_Sand.cs</FileName>
+      <FileName>Assets\MyAssets\Code\OGO\AGO\Type\Terrain\Instance\Plain_Sand.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="Sanichoci.Game.AGameObjectInstance.AGameObject_Terrain_Plain_Wall" Collapsed="true">
+  <Class Name="Sanichoci.OGO.AGO.Terrain.Plain_Wall" Collapsed="true">
     <Position X="10.25" Y="15.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Assets\MyAssets\Code\Game\GameObject\AGameObjectInstance\Type\Terrain\Instance\AGameObject_Terrain_Plain_Wall.cs</FileName>
+      <FileName>Assets\MyAssets\Code\OGO\AGO\Type\Terrain\Instance\Plain_Wall.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="Sanichoci.Game.AGameObjectInstance.AGameObject_Terrain_Plain_Water" Collapsed="true">
+  <Class Name="Sanichoci.OGO.AGO.Terrain.Plain_Water" Collapsed="true">
     <Position X="12.5" Y="15.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Assets\MyAssets\Code\Game\GameObject\AGameObjectInstance\Type\Terrain\Instance\AGameObject_Terrain_Plain_Water.cs</FileName>
+      <FileName>Assets\MyAssets\Code\OGO\AGO\Type\Terrain\Instance\Plain_Water.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="Sanichoci.Game.AGameObjectInstance.AGameObject_Unit_Dummy" Collapsed="true">
+  <Class Name="Sanichoci.OGO.AGO.Unit.Dummy" Collapsed="true">
     <Position X="14.75" Y="15.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAACAAAAAAAAAAAAAAEAAAAICACAAAAAAAAgEIAAAA=</HashCode>
-      <FileName>Assets\MyAssets\Code\Game\GameObject\AGameObjectInstance\Type\Unit\Instance\AGameObject_Unit_Dummy.cs</FileName>
+      <FileName>Assets\MyAssets\Code\OGO\AGO\Type\Unit\Instance\Dummy.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Sanichoci.Game.Map.Map" Collapsed="true">
@@ -686,7 +664,7 @@
   <Class Name="Sanichoci.Logic.Arithmetic.SimpleDecelerateArithmetic" Collapsed="true">
     <Position X="57.5" Y="6.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAACAAAAAgAAgAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Assets\MyAssets\Code\Logic\Arithmetic\SimpleDecelerateArithmetic.cs</FileName>
     </TypeIdentifier>
   </Class>
@@ -1263,6 +1241,13 @@
     </TypeIdentifier>
     <Lollipop Position="0.2" Collapsed="true" />
   </Class>
+  <Class Name="Sanichoci.Component.OGO.AGO.MapComponent" Collapsed="true">
+    <Position X="52.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\MyAssets\Code\Component\OGO\AGO\Terrain\MapComponent.cs</FileName>
+    </TypeIdentifier>
+  </Class>
   <Interface Name="Sanichoci.Animation.IAnimation" Collapsed="true">
     <Position X="50.5" Y="9.75" Width="1.5" />
     <TypeIdentifier>
@@ -1274,7 +1259,7 @@
     <Position X="18.5" Y="21.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Assets\MyAssets\Code\Component\GameObject\EventHandler\IDragEventHandler.cs</FileName>
+      <FileName>Assets\MyAssets\Code\Component\OGO\Common\IDragEventHandler.cs</FileName>
     </TypeIdentifier>
   </Interface>
   <Interface Name="Sanichoci.Component.GameObject.EventHandler.IEventHandler" Collapsed="true">
@@ -1284,18 +1269,18 @@
       <FileName>Assets\MyAssets\Code\Component\GameObject\EventHandler\IEventHandler.cs</FileName>
     </TypeIdentifier>
   </Interface>
-  <Interface Name="Sanichoci.Component.GameObject.EventHandler.IGlobalSelectState" Collapsed="true">
+  <Interface Name="Sanichoci.Component.OGO.AGO.IGlobalSelectState" Collapsed="true">
     <Position X="61" Y="9.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAABIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Assets\MyAssets\Code\Component\GameObject\EventHandler\Interface\IGlobalSelectState.cs</FileName>
+      <FileName>Assets\MyAssets\Code\Component\OGO\AGO\Interface\IGlobalSelectState.cs</FileName>
     </TypeIdentifier>
   </Interface>
-  <Interface Name="Sanichoci.Component.IAGOComponent" Collapsed="true">
+  <Interface Name="Sanichoci.Deprecated.IAGOComponent" Collapsed="true">
     <Position X="48.75" Y="9.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Assets\MyAssets\Code\Component\GameObject\IAGOComponent.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\MyAssets\Code\Deprecated\IAGOComponent.cs</FileName>
     </TypeIdentifier>
   </Interface>
   <Interface Name="Sanichoci.ConsoleCommand.ICommand" Collapsed="true">
@@ -1317,13 +1302,6 @@
     <TypeIdentifier>
       <HashCode>AACAAAAAEACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Assets\MyAssets\Code\UI\UI\AGOTooltipWindow\IAGOTooltipWindow.cs</FileName>
-    </TypeIdentifier>
-  </Interface>
-  <Interface Name="Sanichoci.UI.IUIComponent" Collapsed="true">
-    <Position X="5.5" Y="20.5" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAAAACAAAAAAAAAAAAAAAAQAAABAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Assets\MyAssets\Code\UI\UI\IUIComponent.cs</FileName>
     </TypeIdentifier>
   </Interface>
   <Interface Name="Sanichoci.Deprecated.Game.Ability.IAbilityData" Collapsed="true">
@@ -1361,165 +1339,137 @@
       <FileName>Assets\MyAssets\Code\Game\Interface\IDescribable.cs</FileName>
     </TypeIdentifier>
   </Interface>
-  <Interface Name="Sanichoci.Game.IAGameObjectLifeCycle" Collapsed="true">
-    <Position X="47" Y="9.75" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAABAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAEAAAA=</HashCode>
-      <FileName>Assets\MyAssets\Code\Game\GameObject\AGameObjectInstance\Type\IAGameObjectLifeCycle.cs</FileName>
-    </TypeIdentifier>
-  </Interface>
-  <Interface Name="Sanichoci.Game.IItem" Collapsed="true">
+  <Interface Name="Sanichoci.AGO.OGO.Item.IItem" Collapsed="true">
     <Position X="7" Y="4.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Assets\MyAssets\Code\Game\GameObject\AGameObjectInstance\Type\Item\IItem.cs</FileName>
-    </TypeIdentifier>
-  </Interface>
-  <Interface Name="Sanichoci.Game.IItemType" Collapsed="true">
-    <Position X="32" Y="3.5" Width="1.5" />
-    <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgA=</HashCode>
-      <FileName>Assets\MyAssets\Code\Game\GameObject\AGameObjectInstance\Type\Item\IItemType.cs</FileName>
+      <FileName>Assets\MyAssets\Code\OGO\AGO\Type\Item\IItem.cs</FileName>
     </TypeIdentifier>
   </Interface>
-  <Interface Name="Sanichoci.Game.IType" Collapsed="true">
-    <Position X="27.5" Y="3.5" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAA=</HashCode>
-      <FileName>Assets\MyAssets\Code\Game\GameObject\AGameObjectInstance\Type\IType.cs</FileName>
-    </TypeIdentifier>
-  </Interface>
-  <Interface Name="Sanichoci.Game.ITerrain" Collapsed="true">
+  <Interface Name="Sanichoci.OGO.AGO.Terrain.ITerrain" Collapsed="true">
     <Position X="4" Y="4.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Assets\MyAssets\Code\Game\GameObject\AGameObjectInstance\Type\Terrain\ITerrain.cs</FileName>
+      <HashCode>AAAAAAAACAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\MyAssets\Code\OGO\AGO\Type\Terrain\ITerrain.cs</FileName>
     </TypeIdentifier>
   </Interface>
-  <Interface Name="Sanichoci.Game.ITerrainType" Collapsed="true">
-    <Position X="1" Y="3.5" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Assets\MyAssets\Code\Game\GameObject\AGameObjectInstance\Type\Terrain\ITerrainType.cs</FileName>
-    </TypeIdentifier>
-  </Interface>
-  <Interface Name="Sanichoci.Game.IUnit" Collapsed="true">
+  <Interface Name="Sanichoci.OGO.AGO.Unit.IUnit" Collapsed="true">
     <Position X="1" Y="4.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Assets\MyAssets\Code\Game\GameObject\AGameObjectInstance\Type\Unit\IUnit.cs</FileName>
+      <FileName>Assets\MyAssets\Code\OGO\AGO\Type\Unit\IUnit.cs</FileName>
     </TypeIdentifier>
   </Interface>
-  <Interface Name="Sanichoci.Game.IUnitEventHandler" Collapsed="true">
+  <Interface Name="Sanichoci.OGO.AGO.Unit.IUnitEventHandler" Collapsed="true">
     <Position X="59.25" Y="10.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAABAAAAAAAAAAAAAAAAgAAAACAAAAAAAAAABAAAAAA=</HashCode>
-      <FileName>Assets\MyAssets\Code\Game\GameObject\AGameObjectInstance\Type\Unit\IUnitEventHandler.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>Assets\MyAssets\Code\OGO\AGO\Type\Unit\IUnitEventHandler.cs</FileName>
     </TypeIdentifier>
   </Interface>
-  <Interface Name="Sanichoci.Game.IAGameObject" Collapsed="true">
+  <Interface Name="Sanichoci.OGO.AGO.IAGO" Collapsed="true">
     <Position X="18.25" Y="3.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Assets\MyAssets\Code\Game\GameObject\IAGameObject.cs</FileName>
+      <HashCode>AAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\MyAssets\Code\OGO\AGO\IAGO.cs</FileName>
     </TypeIdentifier>
   </Interface>
-  <Interface Name="Sanichoci.Game.ICaster" Collapsed="true">
+  <Interface Name="Sanichoci.OGO.AGO.ICaster" Collapsed="true">
     <Position X="35.75" Y="2" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAQAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Assets\MyAssets\Code\Game\GameObject\Interface\Caster\ICaster.cs</FileName>
+      <FileName>Assets\MyAssets\Code\OGO\AGO\Interface\Caster\ICaster.cs</FileName>
     </TypeIdentifier>
   </Interface>
-  <Interface Name="Sanichoci.Game.IHPCaster" Collapsed="true">
+  <Interface Name="Sanichoci.OGO.AGO.IHPCaster" Collapsed="true">
     <Position X="20.5" Y="3.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAEAAAAA=</HashCode>
-      <FileName>Assets\MyAssets\Code\Game\GameObject\Interface\Caster\IHPCaster.cs</FileName>
+      <FileName>Assets\MyAssets\Code\OGO\AGO\Interface\Caster\IHPCaster.cs</FileName>
     </TypeIdentifier>
   </Interface>
-  <Interface Name="Sanichoci.Game.IMPCaster" Collapsed="true">
+  <Interface Name="Sanichoci.OGO.AGO.IMPCaster" Collapsed="true">
     <Position X="35.75" Y="3.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAIAAAA=</HashCode>
-      <FileName>Assets\MyAssets\Code\Game\GameObject\Interface\Caster\IMPCaster.cs</FileName>
+      <FileName>Assets\MyAssets\Code\OGO\AGO\Interface\Caster\IMPCaster.cs</FileName>
     </TypeIdentifier>
   </Interface>
-  <Interface Name="Sanichoci.Game.ISPCaster" Collapsed="true">
+  <Interface Name="Sanichoci.OGO.AGO.ISPCaster" Collapsed="true">
     <Position X="23" Y="3.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAA=</HashCode>
-      <FileName>Assets\MyAssets\Code\Game\GameObject\Interface\Caster\ISPCaster.cs</FileName>
+      <FileName>Assets\MyAssets\Code\OGO\AGO\Interface\Caster\ISPCaster.cs</FileName>
     </TypeIdentifier>
   </Interface>
-  <Interface Name="Sanichoci.Game.IAttackState" Collapsed="true">
+  <Interface Name="Sanichoci.OGO.AGO.IAttackState" Collapsed="true">
     <Position X="25.25" Y="3.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAABACIAAAAAAgIAIAAAAAAQBAAAIAAAAAQAZAg=</HashCode>
-      <FileName>Assets\MyAssets\Code\Game\GameObject\Interface\IAttackState.cs</FileName>
+      <FileName>Assets\MyAssets\Code\OGO\AGO\Interface\IAttackState.cs</FileName>
     </TypeIdentifier>
   </Interface>
-  <Interface Name="Sanichoci.Game.ICrossable" Collapsed="true">
+  <Interface Name="Sanichoci.OGO.AGO.ICrossable" Collapsed="true">
     <Position X="57.5" Y="9.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Assets\MyAssets\Code\Game\GameObject\Interface\ICrossable.cs</FileName>
+      <FileName>Assets\MyAssets\Code\OGO\AGO\Interface\ICrossable.cs</FileName>
     </TypeIdentifier>
   </Interface>
-  <Interface Name="Sanichoci.Game.IDefenceState" Collapsed="true">
+  <Interface Name="Sanichoci.OGO.AGO.IDefenceState" Collapsed="true">
     <Position X="29.75" Y="3.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>gAAAAABAAAAAAAAACAAAAAAAAAoAAIAEABMAgBAIAAQ=</HashCode>
-      <FileName>Assets\MyAssets\Code\Game\GameObject\Interface\IDefenceState.cs</FileName>
+      <FileName>Assets\MyAssets\Code\OGO\AGO\Interface\IDefenceState.cs</FileName>
     </TypeIdentifier>
   </Interface>
-  <Interface Name="Sanichoci.Game.IHP" Collapsed="true">
+  <Interface Name="Sanichoci.OGO.AGO.IHP" Collapsed="true">
     <Position X="7" Y="3.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAIAAEAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Assets\MyAssets\Code\Game\GameObject\Interface\IHP.cs</FileName>
+      <FileName>Assets\MyAssets\Code\OGO\AGO\Interface\IHP.cs</FileName>
     </TypeIdentifier>
   </Interface>
-  <Interface Name="Sanichoci.Game.IInventory" Collapsed="true">
+  <Interface Name="Sanichoci.OGO.AGO.IInventory" Collapsed="true">
     <Position X="9.25" Y="3.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Assets\MyAssets\Code\Game\GameObject\Interface\IInventory.cs</FileName>
+      <FileName>Assets\MyAssets\Code\OGO\AGO\Interface\IInventory.cs</FileName>
     </TypeIdentifier>
   </Interface>
-  <Interface Name="Sanichoci.Game.IInWhicnFloor" Collapsed="true">
+  <Interface Name="Sanichoci.OGO.AGO.IInWhicnFloor" Collapsed="true">
     <Position X="47" Y="10.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>QAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Assets\MyAssets\Code\Game\GameObject\Interface\IInWhicnFloor.cs</FileName>
+      <FileName>Assets\MyAssets\Code\OGO\AGO\Interface\IInWhicnFloor.cs</FileName>
     </TypeIdentifier>
   </Interface>
-  <Interface Name="Sanichoci.Game.ILevel" Collapsed="true">
+  <Interface Name="Sanichoci.OGO.AGO.ILevel" Collapsed="true">
     <Position X="48.75" Y="10.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAA=</HashCode>
-      <FileName>Assets\MyAssets\Code\Game\GameObject\Interface\ILevel.cs</FileName>
+      <FileName>Assets\MyAssets\Code\OGO\AGO\Interface\ILevel.cs</FileName>
     </TypeIdentifier>
   </Interface>
-  <Interface Name="Sanichoci.Game.IMP" Collapsed="true">
+  <Interface Name="Sanichoci.OGO.AGO.IMP" Collapsed="true">
     <Position X="11.5" Y="3.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAGAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Assets\MyAssets\Code\Game\GameObject\Interface\IMP.cs</FileName>
+      <FileName>Assets\MyAssets\Code\OGO\AGO\Interface\IMP.cs</FileName>
     </TypeIdentifier>
   </Interface>
-  <Interface Name="Sanichoci.Game.IProperty" Collapsed="true">
+  <Interface Name="Sanichoci.OGO.AGO.IProperty" Collapsed="true">
     <Position X="13.75" Y="3.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAACAAAAAAAAAAEAAAABAABBAAAAAAIAACAAAACA=</HashCode>
-      <FileName>Assets\MyAssets\Code\Game\GameObject\Interface\IProperty.cs</FileName>
+      <FileName>Assets\MyAssets\Code\OGO\AGO\Interface\IProperty.cs</FileName>
     </TypeIdentifier>
   </Interface>
-  <Interface Name="Sanichoci.Game.ISP" Collapsed="true">
+  <Interface Name="Sanichoci.OGO.AGO.ISP" Collapsed="true">
     <Position X="16" Y="3.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAgAAQAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Assets\MyAssets\Code\Game\GameObject\Interface\ISP.cs</FileName>
+      <FileName>Assets\MyAssets\Code\OGO\AGO\Interface\ISP.cs</FileName>
     </TypeIdentifier>
   </Interface>
   <Interface Name="Sanichoci.Game.Map.IMap" Collapsed="true">
@@ -1585,25 +1535,25 @@
       <FileName>Assets\MyAssets\Code\Deprecated\AGameObjectInstanceType.cs</FileName>
     </TypeIdentifier>
   </Enum>
-  <Enum Name="Sanichoci.Game.ItemType" Collapsed="true">
+  <Enum Name="Sanichoci.OGO.AGO.Item.ItemType" Collapsed="true">
     <Position X="48.75" Y="11.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAIAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAABA=</HashCode>
-      <FileName>Assets\MyAssets\Code\Game\GameObject\AGameObjectInstance\Type\Item\IItemType.cs</FileName>
+      <FileName>Assets\MyAssets\Code\OGO\AGO\Type\Item\ItemType.cs</FileName>
     </TypeIdentifier>
   </Enum>
-  <Enum Name="Sanichoci.Game.AGameObjectType" Collapsed="true">
+  <Enum Name="Sanichoci.OGO.AGO.AGOType" Collapsed="true">
     <Position X="47" Y="11.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAABAAAAAAAAAAIAAAAAAEAAAAAAAAAEAAACEAAAA=</HashCode>
-      <FileName>Assets\MyAssets\Code\Game\GameObject\AGameObjectInstance\Type\IType.cs</FileName>
+      <FileName>Assets\MyAssets\Code\OGO\AGO\AGOType.cs</FileName>
     </TypeIdentifier>
   </Enum>
-  <Enum Name="Sanichoci.Game.TerrainType" Collapsed="true">
+  <Enum Name="Sanichoci.OGO.AGO.Terrain.TerrainType" Collapsed="true">
     <Position X="55.75" Y="11.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>ACAAQEABAQACAAAIAgAAAAAQAAAoAAQAAAAAAAACQAA=</HashCode>
-      <FileName>Assets\MyAssets\Code\Game\GameObject\AGameObjectInstance\Type\Terrain\TerrainType.cs</FileName>
+      <FileName>Assets\MyAssets\Code\OGO\AGO\Type\Terrain\TerrainType.cs</FileName>
     </TypeIdentifier>
   </Enum>
   <Enum Name="Sanichoci.Game.Map.MapType" Collapsed="true">

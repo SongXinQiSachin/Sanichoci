@@ -1,5 +1,6 @@
 ﻿using Sanichoci.Component.GameObject;
 using Sanichoci.Game.Interface;
+using Sanichoci.OGO.AGO;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,7 +10,7 @@ namespace Sanichoci.Game.Ability
 {
     public interface IAbility : IDescribable, ICooldown
     {
-        IAGameObject[] Targets { get; set; }
+        AbstractAGO[] Targets { get; set; }
 
         float CastRange { get; set; }
 

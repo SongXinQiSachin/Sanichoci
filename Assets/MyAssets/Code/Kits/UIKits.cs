@@ -45,7 +45,7 @@ namespace Sanichoci.Kits
             return result;
         }
 
-        public static void MoveUIToCuursorPos(IUIComponent ui)
+        public static void MoveUIToCuursorPos(IUI ui)
         {
             Vector2 np = UIKits.GetLocalPosFromScreenPos(UIManager.Instance.GameSceneUICanvas, InputManager.Instance.GetCursorScreenPos());
             Vector2 size = UIKits.GetUISize(ui.Transform);

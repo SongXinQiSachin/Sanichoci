@@ -8,7 +8,7 @@ using UnityEngine;
 namespace Sanichoci.UI
 {
     [RequireComponent(typeof(CanvasGroup))]
-    public abstract class AbstractUIComponent : MonoBehaviour, IUIComponent
+    public abstract class AbstractUIComponent : MonoBehaviour, IUI
     {
         public Transform Transform { get; set; }
 
@@ -38,5 +38,10 @@ namespace Sanichoci.UI
         }
 
         protected abstract void OnCreate();
+
+        public void Dispose()
+        {
+            throw new NotImplementedException();
+        }
     }
 }

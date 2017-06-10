@@ -6,6 +6,7 @@ using System.Linq;
 using System.Text;
 using UnityEngine;
 using Sanichoci.Game;
+using Sanichoci.OGO.AGO;
 
 namespace Sanichoci.UI
 {
@@ -43,6 +44,6 @@ namespace Sanichoci.UI
             yield return null;
         }
 
-        public abstract void UpdateData(AbstractAGameObject obj);
+        public abstract void UpdateData(AbstractAGO obj);
     }
 }

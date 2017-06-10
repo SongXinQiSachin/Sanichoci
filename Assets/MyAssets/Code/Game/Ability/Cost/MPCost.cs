@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using Sanichoci.Game;
 using Sanichoci.Game.Interface;
+using Sanichoci.OGO.AGO;
 
 namespace Sanichoci.Game.Cost
 {

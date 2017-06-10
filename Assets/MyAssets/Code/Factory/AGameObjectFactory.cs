@@ -1,7 +1,8 @@
 ﻿using Sanichoci.Game;
-using Sanichoci.Game.AGameObjectInstance;
 using Sanichoci.Game.Map;
 using Sanichoci.Manager;
+using Sanichoci.OGO.AGO;
+using Sanichoci.OGO.AGO.Terrain;
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -15,7 +16,7 @@ namespace Sanichoci.Factory
     {
         public static GameObject CreateAGO(string name)
         {
-            AGameObjectType type = AbstractAGameObject.ParseAGOType(name);
+            AGOType type = AbstractAGO.ParseAGOType(name);
 
             MethodInfo createFunc = typeof(AGameObjectFactory).GetMethod("Create" + type.ToString());
 

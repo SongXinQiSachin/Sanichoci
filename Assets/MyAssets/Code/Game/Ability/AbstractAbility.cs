@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using Sanichoci.Game.Interface;
+using Sanichoci.OGO.AGO;
 
 namespace Sanichoci.Game.Ability
 {
@@ -12,7 +13,7 @@ namespace Sanichoci.Game.Ability
         {
         }
 
-        public abstract IAGameObject[] Targets { get; set; }
+        public abstract AbstractAGO[] Targets { get; set; }
         public abstract float CastRange { get; set; }
         public abstract float EffectRange { get; set; }
         public abstract ICost[] Costs { get; set; }
