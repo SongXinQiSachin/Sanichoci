@@ -1,8 +1,7 @@
 ﻿using Sanichoci.Game;
-using Sanichoci.Game.Map;
 using Sanichoci.Manager;
 using Sanichoci.OGO.AGO;
-using Sanichoci.OGO.AGO.Terrain;
+using Sanichoci.OGO.AGO.TerrainBlock;
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -18,23 +17,13 @@ namespace Sanichoci.Factory
         {
             AGOType type = AbstractAGO.ParseAGOType(name);
 
+            Debug.Log(type);
+
             MethodInfo createFunc = typeof(AGameObjectFactory).GetMethod("Create" + type.ToString());
 
             GameObject obj = (GameObject) createFunc.Invoke(null, new string[] { name });
 
             return obj;
-        }
-
-        public static GameObject CreateTerrain(string name)
-        {
-            GameObject prefab = TerrainPrefabManager.Instance.GetPrefabFromName(name);
-            GameObject obj = CreateStageObject(prefab);
-            return obj;
-        }
-
-        public static GameObject CreateTerrainByType(MapType mapType, TerrainType terrainType)
-        {
-            return CreateTerrain("Terrain_" + mapType.ToString() + "_" + terrainType.ToString());
         }
 
         public static GameObject CreateUnit(string name)

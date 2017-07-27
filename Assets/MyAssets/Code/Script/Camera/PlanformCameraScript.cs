@@ -5,7 +5,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-namespace Sanichoci.Script.Camera
+namespace Sanichoci.Script
 {
     public class PlanformCameraScript : MonoBehaviour
     {
